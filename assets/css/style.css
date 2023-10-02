@@ -139,11 +139,11 @@
     padding-bottom: 87px;
 }
 
-.box1 {
+.box2 {
     border-radius: 46px;
     max-width: 660px;
     padding: 10px 13px;
-    cursor: pointer;
+    cursor: pointer !important;
     transition: all 300ms linear;
 }
 
@@ -158,15 +158,15 @@
     transition: all 300ms linear;
 }
 
-.box1:hover {
+.box2:hover {
     background-color: var(--black);
 }
 
-.box1:hover .cricle1 {
+.box2:hover .cricle1 {
     background: var(--Gradient-H, linear-gradient(90deg, #FFA800 0%, #F06500 100%));
 }
 
-.box1:hover .cricle1 p {
+.box2:hover .cricle1 p {
     color: var(--white);
 }
 
@@ -390,8 +390,6 @@ tr:hover {
     font-style: normal;
     font-weight: var(--fw-4) !important;
     line-height: 180%;
-    border-radius: 10px;
-    border: 1px solid var(--white);
     background: linear-gradient(95deg, rgba(255, 255, 255, 0.05) 0.97%, rgba(255, 255, 255, 0.00) 103.14%);
     backdrop-filter: blur(16px);
 }
@@ -412,9 +410,9 @@ tr:hover {
     color: var(--white) !important;
     border-radius: 10px !important;
     background: linear-gradient(95deg, rgba(255, 255, 255, 0.05) 0.97%, rgba(255, 255, 255, 0.00) 103.14%) !important;
-    border: 1px solid var(--white) !important;
 }
-.accordion-button:focus{
+
+.accordion-button:focus {
     display: none;
 }
 
@@ -430,6 +428,13 @@ tr:hover {
     color: var(--bs-accordion-color);
     background-color: var(--bs-accordion-bg);
     border: none !important;
+    border: 1px solid var(--white) !important;
+    border-radius: 10px !important;
+}
+
+.accordion-item:not(:first-of-type) {
+    border: 1px solid var(--white) !important;
+    border-radius: 10px !important;
 }
 
 .roadmap-elipse {
